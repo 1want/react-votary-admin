@@ -1,0 +1,20 @@
+body {
+  overflow: hidden;
+}
+.v-layout {
+  height: 100vh !important;
+}
+.v-layout .header {
+  background: #fff !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.v-layout .header .logout {
+  font-size: 15px;
+}
+.v-layout .v-menu {
+  height: 100%;
+}

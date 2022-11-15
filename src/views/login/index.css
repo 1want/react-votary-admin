@@ -1,0 +1,24 @@
+.loging-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(0, 195, 255, 0.904), #6f6ff2);
+}
+.loging-wrapper .login-form {
+  width: 480px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
+}
+.loging-wrapper .login-form .v-input {
+  width: 200px;
+  margin-bottom: 40px;
+}
+.loging-wrapper .login-form .my-input {
+  margin-bottom: 40px;
+}
