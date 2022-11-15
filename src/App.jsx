@@ -1,9 +1,9 @@
 import Router from '@/router'
-import { BrowserRouter, HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 const App = () => {
   return (
-    <BrowserRouter basename='react-tmp'>
+    <BrowserRouter basename='react-votary-admin'>
       <Router />
     </BrowserRouter>
   )
