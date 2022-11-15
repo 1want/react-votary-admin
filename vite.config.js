@@ -10,5 +10,5 @@ export default defineConfig({
       '@': '/src/'
     }
   },
-  base: '/react-tmp/'
+  base: '/react-votary-admin/'
 })
