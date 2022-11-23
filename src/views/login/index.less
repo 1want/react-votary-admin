@@ -1,28 +1,35 @@
-.loging-wrapper {
+.login-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    to right,
-    rgba(0, 195, 255, 0.904),
-    rgb(111, 111, 242)
-  );
   .login-form {
-    width: 480px;
-    height: 300px;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
     justify-content: center;
     .v-input {
-      width: 200px;
-      margin-bottom: 40px;
+      width: 420px;
+      margin-bottom: 60px;
+      padding-bottom: 10px;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #d1cfcf;
+      .input {
+        color: rgb(214, 214, 214);
+        background: transparent;
+      }
     }
-    .my-input {
-      margin-bottom: 40px;
+    .login {
+      width: 420px;
+      border-bottom: 1px solid #d1cfcf;
+      text-align: center;
+      color: #989595;
+      font-size: 20px;
+      cursor: pointer;
     }
   }
 }

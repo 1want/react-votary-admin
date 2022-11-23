@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import { Button, Input } from 'votary'
-import './index.css'
+import { Input } from 'votary'
+
+import './index.less'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -10,13 +11,21 @@ const Login = () => {
     navigate('/')
   }
   return (
-    <div className='loging-wrapper'>
+    <div className='login-wrapper'>
       <div className='login-form'>
-        <Input placeholder='请输入账号' />
-        <Input placeholder='请输入密码' type='password' />
-        <Button type='primary' onClick={login}>
-          登录
-        </Button>
+        <Input
+          leftIcon='user'
+          type='text'
+          placeholder='please input username'
+        />
+        <Input
+          leftIcon='lock'
+          type='text'
+          placeholder='please input password'
+        />
+        <span className='login' onClick={login}>
+          LOGIN
+        </span>
       </div>
     </div>
   )

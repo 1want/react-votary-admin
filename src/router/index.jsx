@@ -26,6 +26,10 @@ const getRouter = () => {
       path: '/login',
       element: <Login />
     }
+    // {
+    //   path: '*',
+    //   element: <Navigate to='/login' />
+    // }
   ])
   return router
 }

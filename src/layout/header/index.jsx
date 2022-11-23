@@ -1,10 +1,14 @@
 import { Button } from 'votary'
-
-const logout = () => {
-  localStorage.removeItem('token')
-}
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const logout = () => {
+    localStorage.removeItem('token')
+    navigate('/login', { replace: true })
+  }
+
   return (
     <div className='header'>
       <span>欢乐一家人</span>

@@ -2,7 +2,8 @@ import { Menu } from 'votary'
 
 const SideBar = () => {
   return (
-    <Menu>
+    <Menu uniqueOpened>
+      <Menu.Item index='/home'>组件</Menu.Item>
       <Menu.SubMenu title='首页' index='1' icon='light-rain'>
         <Menu.Item>组件</Menu.Item>
       </Menu.SubMenu>

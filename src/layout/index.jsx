@@ -1,27 +1,20 @@
-import { Layout } from 'votary'
 import SideBar from './side'
 import Head from './header'
 import Content from './main'
 
-import './index.css'
-
-const { Header, Aside, Main } = Layout
+import './index.less'
 
 const Layouts = () => {
   return (
-    <Layout>
-      <Header>
+    <div className='layout'>
+      <header>
         <Head />
-      </Header>
-      <Main>
-        <Aside>
-          <SideBar />
-        </Aside>
-        <Main>
-          <Content />
-        </Main>
-      </Main>
-    </Layout>
+      </header>
+      <main>
+        <SideBar />
+        <Content />
+      </main>
+    </div>
   )
 }
 
